@@ -14,7 +14,11 @@ spec:
     spec:
       containers:
       - name: petshop
+<<<<<<< HEAD
+        image: sevenajay/petshop:latest
+=======
         image: sravani0508/petshop:tagname
+>>>>>>> 069cb7a2cd29d8b160fbb53eddd05c723d0af013
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
