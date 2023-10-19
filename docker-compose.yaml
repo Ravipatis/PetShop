@@ -17,8 +17,13 @@
 version: "3.9"
 
 services:
+<<<<<<< HEAD
   jpetstore:
     container_name: jpetstore
+=======
+  petshop:
+    container_name: petshop
+>>>>>>> 069cb7a2cd29d8b160fbb53eddd05c723d0af013
     build:
       context: .
     ports:

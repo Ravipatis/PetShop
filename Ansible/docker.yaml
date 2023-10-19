@@ -13,6 +13,7 @@
         chdir: /var/lib/jenkins/workspace/petstore
 
     - name: tag image
+<<<<<<< HEAD
       command: docker tag petstore:latest sevenajay/petstore:latest 
 
     - name: Log in to Docker Hub
@@ -26,3 +27,19 @@
 
     - name: Run container
       command: docker run -d --name pet1 -p 8081:8080 sevenajay/petstore:latest
+=======
+      command: docker tag petshop:latest sravani0508/petshop:tagname 
+
+    - name: Log in to Docker Hub
+      community.docker.docker_login:
+        # registry_url: https://hub.docker.com/repositories/sravani0508
+        registry_url: https://hub.docker.com/repository/docker/sravani0508/petshop
+        username: sravani0508
+        password: Family@1305
+
+    - name: Push image
+      command: docker push sravani0508/petshop:tagname
+
+    - name: Run container
+      command: docker run -d --name pet1 -p 8081:8080 sravani0508/petshop:tagname
+>>>>>>> 069cb7a2cd29d8b160fbb53eddd05c723d0af013
