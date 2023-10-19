@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: petshop
-        image: sravani0508/docker_hub:tagname
+        image: sravani0508/petshop:tagname
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
