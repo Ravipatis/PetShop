@@ -18,7 +18,7 @@ version: "3.9"
 
 services:
   jpetstore:
-    container_name: petshop
+    container_name: jpetstore
     build:
       context: .
     ports:
