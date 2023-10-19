@@ -18,9 +18,9 @@
     - name: Log in to Docker Hub
       community.docker.docker_login:
         # registry_url: https://hub.docker.com/repositories/sravani0508
-        registry_url: https://hub.docker.com/repository/docker/sravani0508/petshop/general
+        registry_url: https://hub.docker.com/repository/docker/sravani0508/petshop
         username: sravani0508
-        password: dckr_pat_XHRu7SQJbBRxhKsrtV_eiopSLEk
+        password: Family@1305
 
     - name: Push image
       command: docker push sravani0508/petshop:tagname
