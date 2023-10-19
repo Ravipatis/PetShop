@@ -19,7 +19,7 @@
       community.docker.docker_login:
         registry_url: https://index.docker.io/v1/
         username: sravani0508
-        password: dckr_pat_1um1CsvywEoG2QBciG0fpViL9kI
+        password: dckr_pat_XHRu7SQJbBRxhKsrtV_eiopSLEk
 
     - name: Push image
       command: docker push sravani0508/petshop:tagname
